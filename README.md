@@ -7,5 +7,5 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/Estado-En%20creación-orange?style=for-the-badge" alt="Estado del proyecto">
-  <img src="https://img.shields.io/badge/Actualizado-Junio%202025-brightgreen?style=for-the-badge" alt="Última actualización">
+  <img src="https://img.shields.io/badge/Actualizado-Junio%202025-blue?style=for-the-badge" alt="Última actualización">
 </p>
