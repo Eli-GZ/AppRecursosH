@@ -28,5 +28,4 @@ public class EmpleadoControlador {
         listaEmple.forEach(empleado -> logger.info(empleado.toString()));
         return listaEmple;
     }
-
 }
