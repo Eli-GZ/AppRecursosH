@@ -3,14 +3,18 @@ import React, { useEffect, useState } from 'react'
 import { NumericFormat } from 'react-number-format';
 
 export default function ListadoEmpleados() {
-
+//URL del back-end
   const urlBase = "http://localhost:8080/rh-app/empleados";
 
+//hook de estado, crea una variable empleados y una funcion para modificarla setEmpleados
   const [empleados, setEmpleados] = useState([]);
 
+//Se llama a la funcion cargarEmpleados, obtiene los datos del back-end(array al final, provoca que se ejecute solo una vez)
   useEffect(() => {
     cargarEmpleados();
   }, []);
+
+//get con axios. carga los datos del back-end(resultado.data) y lo guarda en empleados
   const cargarEmpleados = async () => {
     const resultado = await axios.get(urlBase);
     console.log("Resultado cargar empleados");
