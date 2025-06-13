@@ -1,9 +1,14 @@
 import axios from 'axios';
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { useNavigate, useParams } from 'react-router-dom';
 
 export default function EditarEmpleado() {
+
+  const urlBase = "http://localhost:8080/rh-app/empleados";
+
   let navegacion = useNavigate();
+
+  const { id } = useParams();
 
   const [empleado, setEmpleado] = useState({
     nombre: "",
@@ -11,7 +16,17 @@ export default function EditarEmpleado() {
     sueldo: ""
   });
 
-  const {nombre, departamento, sueldo} = empleado
+  const { nombre, departamento, sueldo } = empleado
+
+
+  useEffect(() => {
+    cargarEmpleado();
+  },[])
+
+  const cargarEmpleado = async () => {
+    const resultado = await axios.get(`${urlBase}/${id}`)
+    setEmpleado(resultado.data)
+  }
 
   const onInputChange = (e) => {
     //spread operator ... (expandir los atributos)
@@ -20,7 +35,6 @@ export default function EditarEmpleado() {
 
   const onSubmit = async (e) => {
     e.preventDefault();
-    const urlBase = "http://localhost:8080/rh-app/empleados";
     await axios.post(urlBase, empleado);
     //Redirigimos a la pagina de inicio
     navegacion("/")
