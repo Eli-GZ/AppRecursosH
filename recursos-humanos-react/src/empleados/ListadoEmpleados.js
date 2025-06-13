@@ -1,6 +1,9 @@
 import React from 'react'
 
 export default function ListadoEmpleados() {
+
+const urlBase ="http://localhost:8080/rh-app/empleados";
+
   return (
     <div className="container">
       <div className="container text-center" style={{ margin: "30px" }}>
