@@ -29,11 +29,11 @@ const eliminarEmpleado = async(id) =>{
   return (
     <div className="container">
       <div className="container text-center">
-        <h3>Sistema de recursos humanos</h3>
+        <h4 className="text-light">Listado de Empleados activos</h4>
       </div>
 
       <table className="table table-striped table-hover align-middle">
-        <thead className="table-dark">
+        <thead className="table-dark fs-5">
           <tr>
             <th scope="col">ID</th>
             <th scope="col">Empleado</th>
@@ -42,7 +42,7 @@ const eliminarEmpleado = async(id) =>{
             <th scope="col"></th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className='fs-5 fw-bolder'>
           {
             //Iteramos el arreglo de empleados
             empleados.map((empleado, indice) => (
@@ -58,8 +58,8 @@ const eliminarEmpleado = async(id) =>{
                 <td className='text-center'>
                   <div>
                     <Link to={`/editar/${empleado.idEmpleado}`}
-                    className='btn btn-primary btn-sm me-3'>Editar</Link>
-                    <button onClick={()=> eliminarEmpleado(empleado.idEmpleado)}  className='btn btn-dark btn-sm'>
+                    className='btn btn-primary btn-sm me-3 fs-5'>Editar</Link>
+                    <button onClick={()=> eliminarEmpleado(empleado.idEmpleado)}  className='btn btn-dark btn-sm fs-5'>
                       Eliminar
                     </button>
                   </div>
