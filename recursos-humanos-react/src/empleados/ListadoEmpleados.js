@@ -28,7 +28,7 @@ const eliminarEmpleado = async(id) =>{
 }
   return (
     <div className="container">
-      <div className="container text-center" style={{ margin: "30px" }}>
+      <div className="container text-center">
         <h3>Sistema de recursos humanos</h3>
       </div>
 
