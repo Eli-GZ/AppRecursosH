@@ -4,27 +4,27 @@ Este proyecto es una aplicación fullstack que permite gestionar empleados, depa
 
 👨‍💻 Tecnologías utilizadas:
 
-Frontend:
-React ⚛️
+Frontend:<br>
+React ⚛️<br>
 Axios 🌐
 
-Backend:
-Java 21 ☕
-Spring Boot 🌱
-Spring Data JPA 🗃️
-Hibernate 🔄
+Backend:<br>
+Java 21 ☕<br>
+Spring Boot 🌱<br>
+Spring Data JPA 🗃️<br>
+Hibernate 🔄<br>
 
-Base de Datos:
-MySQL 🐬
+Base de Datos:<br>
+MySQL 🐬<br>
 
 Otros:
-Maven 🧰
+Maven 🧰<br>
 Postman (para pruebas de API) 📬
 
-🔧 Funcionalidades principales:
-Autenticación y login de usuarios 🔐
-CRUD de Empleados 👥
-Gestión de perfiles y permisos 🔧
+🔧 Funcionalidades principales:<br>
+Autenticación y login de usuarios 🔐<br>
+CRUD de Empleados 👥<br>
+Gestión de perfiles y permisos 🔧<br>
 
-✅ Estado del proyecto:
+✅ Estado del proyecto:<br>
 Versión inicial completamente funcional.
