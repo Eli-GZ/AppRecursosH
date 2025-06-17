@@ -39,7 +39,7 @@ export default function EditarEmpleado() {
     e.preventDefault();
     await axios.put(`${urlBase}/${id}`, empleado);
     //Redirigimos a la pagina de inicio
-    navegacion("/");
+    navegacion("/inicio");
   }
 
   return (
@@ -67,7 +67,7 @@ export default function EditarEmpleado() {
           </div>
           <div className='text-center'>
             <button type="submit" className="btn btn-primary me-3">Guardar</button>
-            <a href='/' className='btn btn-dark'>Regresar</a>
+            <a href='/inicio' className='btn btn-dark'>Regresar</a>
           </div>
         </form>
       </div>

@@ -23,7 +23,7 @@ export default function AgregarEmpleado() {
     const urlBase = "http://localhost:8080/rh-app/empleados";
     await axios.post(urlBase, empleado);
     //Redirigimos a la pagina de inicio
-    navegacion("/")
+    navegacion("/inicio")
   }
 
   return (
@@ -51,7 +51,7 @@ export default function AgregarEmpleado() {
           </div>
           <div className='text-center'>
             <button type="submit" className="btn btn-primary me-3 fs-4">Agregar</button>
-            <a href='/' className='btn btn-dark fs-4'>Regresar</a>
+            <a href='/inicio' className='btn btn-dark fs-4'>Regresar</a>
           </div>
         </form>
       </div>
